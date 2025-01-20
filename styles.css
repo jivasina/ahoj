@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: zmenaPozadi 2s infinite alternate;
+}
+h1 {
+    font-size: 5rem;
+    font-family: Arial, sans-serif;
+    color: white;
+    animation: blikatText 1s infinite alternate;
+}
+@keyframes blikatText {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes zmenaPozadi {
+    0% { background-color: #ff5733; }
+    50% { background-color: #33c3ff; }
+    100% { background-color: #33ff57; }
+}
