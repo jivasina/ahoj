@@ -1,0 +1,94 @@
+/* Reset stylů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ /* Základní stylování */
+ body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+ }
+ /* Hlavička */
+ header {
+    background-color: #ffcc00;
+    padding: 20px;
+ }
+ header h1 {
+    font-size: 2.5em;
+    color: #333;
+ }
+ nav ul {
+    list-style: none;
+    margin-top: 10px;
+ }
+ nav ul li {
+    display: inline;
+    margin: 0 15px;
+ }
+ nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+ }
+ /* Hlavní sekce */
+ .hero {
+    background: url('cats-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+ }
+ .hero h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+ }
+ .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+ }
+ .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+ }
+ /* Sekce o kočkách */
+ .about {
+    padding: 40px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+ }
+ /* Plemena */
+ .plemena {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+ }
+ .plemeno {
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+ }
+ .plemeno img {
+    width: 100%;
+    border-radius: 10px;
+ }
+ .plemeno h2 {
+    margin: 10px 0;
+ }
+ /* Patička */
+ footer {
+    background-color: #ffcc00;
+    padding: 15px;
+    margin-top: 20px;
+ }
