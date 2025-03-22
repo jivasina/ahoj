@@ -1,52 +1,71 @@
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Madrid - Historie</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Madrid - Úvod</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+      color: #111;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .hero a {
+      display: inline-block;
+      background-color: #00529F;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero a:hover {
+      background-color: #003f7d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f0f0f0;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html"><img src="images/logo.png" alt="Logo Realu Madrid" class="logo"></a>
-      <ul>
-        <li><a href="index.html">Domů</a></li>
-        <li><a href="historie.html" class="active">Historie klubu</a></li>
-        <li><a href="kviz.html">Kvíz</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="content">
-    <h1>Historie Realu Madrid</h1>
-    <p>
-      Klub byl založen v roce <strong>1902</strong> jako Madrid Football Club. Titul "Real" získal v roce 1920 od španělského krále.
-      Domácím stadionem je legendární <strong>Santiágo Bernabéu</strong>, kde se psala historie evropského fotbalu.
-    </p>
-
-    <p>
-      Real Madrid se proslavil nejen doma ve Španělsku, ale i celosvětově. V Lize mistrů UEFA vyhrál rekordních <strong>14×</strong>
-      a získal si obdiv milionů fanoušků.
-    </p>
-
-    <h2>Největší legendy</h2>
-    <ul>
-      <li><strong>Alfredo Di Stéfano</strong> – symbol počátků evropské dominance.</li>
-      <li><strong>Cristiano Ronaldo</strong> – nejlepší střelec klubové historie.</li>
-      <li><strong>Sergio Ramos</strong> – kapitán a obranný pilíř.</li>
-      <li><strong>Luka Modrić</strong> – mistr kreativity a držitel Zlatého míče.</li>
-    </ul>
-
-    <p>
-      Zajímavost: Když Real Madrid v roce 2022 vyhrál svou <strong>14. trofej</strong> v Champions League, přepsal dějiny.
-    </p>
-
-    <p>Nezapomeň – odpovědi na kvíz možná najdeš právě tady 😉</p>
-  </main>
+  <section class="hero">
+    <h1>Vítej na stránce fanoušků Real Madrid</h1>
+    <p>Objev historii nejslavnějšího fotbalového klubu na světě, poznej legendy a otestuj své znalosti v interaktivním kvízu.</p>
+    <a href="historie.html">Začít prozkoumávat</a>
+  </section>
 
   <footer>
     <p>Pouze pro studijní účely</p>
