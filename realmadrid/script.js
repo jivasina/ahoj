@@ -12,7 +12,6 @@ function zkontrolujOdpovedi() {
   const q3 = document.getElementById("q3").value;
   if (q3 === "15") spravne++;
 
-
   // 4
   const q4 = document.getElementById("q4").value.trim().toLowerCase();
   if (q4.includes("ronaldo")) spravne++;
