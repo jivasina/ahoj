@@ -10,7 +10,8 @@ function zkontrolujOdpovedi() {
 
   // 3
   const q3 = document.getElementById("q3").value;
-  if (q3 === "14") spravne++;
+  if (q3 === "15") spravne++;
+
 
   // 4
   const q4 = document.getElementById("q4").value.trim().toLowerCase();
