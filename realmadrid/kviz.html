@@ -1,68 +1,45 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Real Madrid - Kvíz</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+<main class="content">
+  <h1>Kvíz: Co víš o Real Madrid?</h1>
 
-  <!-- Navigační lišta -->
-  <header>
-    <nav>
-      <a href="index.html"><img src="images/logo.png" alt="Logo Realu Madrid" class="logo" /></a>
-      <ul>
-        <li><a href="index.html">Domů</a></li>
-        <li><a href="historie.html">Historie klubu</a></li>
-        <li><a href="kviz.html" class="active">Kvíz</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- 1. otázka -->
+  <div class="otazka">
+    <p><strong>1. V kterém roce byl Real Madrid založen?</strong></p>
+    <input type="text" id="q1" placeholder="Např. 1902" />
+  </div>
 
-  <!-- Obsah stránky s kvízem -->
-  <main class="content">
-    <h1>Quiz: Otestujte své znalosti o Realu Madrid</h1>
-    <p>Odpovězte na následující otázky a zjistěte, jak dobře znáte Real Madrid:</p>
-    
-    <!-- Otázka 1 -->
-    <div class="otazka">
-      <p><strong>1. V kterém roce byl Real Madrid založen?</strong></p>
-      <input type="text" id="q1" placeholder="Vaše odpověď (číslo)" />
-    </div>
+  <!-- 2. otázka -->
+  <div class="otazka">
+    <p><strong>2. Jak se jmenuje stadion Realu Madrid?</strong></p>
+    <label><input type="radio" name="q2" value="Santiágo Bernabéu" id="q2_correct" /> Santiágo Bernabéu</label><br/>
+    <label><input type="radio" name="q2" value="Camp Nou" /> Camp Nou</label><br/>
+    <label><input type="radio" name="q2" value="Old Trafford" /> Old Trafford</label>
+  </div>
 
-    <!-- Otázka 2 -->
-    <div class="otazka">
-      <p><strong>2. Jak se jmenuje domácí stadion Realu Madrid?</strong></p>
-      <label><input type="radio" name="q2" value="Camp Nou" /> Camp Nou</label><br/>
-      <label><input type="radio" name="q2" value="San Siro" /> San Siro</label><br/>
-      <label><input type="radio" name="q2" value="Santiago Bernabéu" id="q2_correct" /> Santiágo Bernabéu</label>
-    </div>
+  <!-- 3. otázka -->
+  <div class="otazka">
+    <p><strong>3. Kolikrát Real vyhrál Ligu mistrů?</strong></p>
+    <select id="q3">
+      <option value="">-- Vyber --</option>
+      <option value="10">10×</option>
+      <option value="13">13×</option>
+      <option value="14">14×</option>
+    </select>
+  </div>
 
-    <!-- Otázka 3 -->
-    <div class="otazka">
-      <p><strong>3. Kolikrát vyhrál Real Madrid Ligu mistrů (PMEZ/Ligu mistrů UEFA)?</strong></p>
-      <select id="q3">
-        <option value="">-- Vyberte možnost --</option>
-        <option value="10">10×</option>
-        <option value="14">14×</option>
-        <option value="20">20×</option>
-      </select>
-    </div>
+  <!-- 4. otázka -->
+  <div class="otazka">
+    <p><strong>4. Kdo je historicky nejlepším střelcem Realu Madrid?</strong></p>
+    <input type="text" id="q4" placeholder="Jméno hráče" />
+  </div>
 
-    <button onclick="zkontrolujOdpovedi()">Zkontrolovat odpovědi</button>
+  <!-- 5. otázka -->
+  <div class="otazka">
+    <p><strong>5. Který z těchto hráčů NENÍ legenda Realu?</strong></p>
+    <label><input type="checkbox" name="q5" value="Cristiano Ronaldo" /> Cristiano Ronaldo</label><br/>
+    <label><input type="checkbox" name="q5" value="Lionel Messi" id="q5_wrong" /> Lionel Messi</label><br/>
+    <label><input type="checkbox" name="q5" value="Sergio Ramos" /> Sergio Ramos</label>
+  </div>
 
-    <!-- Výsledek kvízu -->
-    <div id="vysledek"></div>
-  </main>
-
-  <!-- Patička -->
-  <footer>
-    <p>Pouze pro studijní účely</p>
-  </footer>
-
-  <!-- Načtení JavaScriptu pro kvíz -->
-  <script src="script.js"></script>
-</body>
-</html>
+  <button onclick="zkontrolujOdpovedi()">Zkontrolovat odpovědi</button>
+  <div id="vysledek"></div>
+</main>
